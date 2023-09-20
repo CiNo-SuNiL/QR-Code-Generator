@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+</head>
+<body>
+  <div class="qr">
+    <p>QR Image Generated</p>
+    <img src="/images/qr_img.png" class="qr_pic">
+  </div>
+
+  <div class="card">
+    <p><%=displayurl %></p>
+
+    <form action="/created" method="post">
+      <button type="submit" value="Download" name="submit">Download</button>
+      <button type="submit" value="generate" name="submit">Generate New</button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
